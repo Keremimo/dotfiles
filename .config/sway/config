@@ -241,5 +241,6 @@ shadow_blur_radius 20
 ####
 # Enable autotiling
 exec_always autotiling
+exec_always keepassxc
 
 include /etc/sway/config.d/*
