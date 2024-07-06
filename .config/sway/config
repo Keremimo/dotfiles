@@ -229,6 +229,11 @@ repeat_delay 250
 repeat_rate 35
 }
 
+input type:touchpad {
+    tap enabled
+    natural_scroll enabled
+}
+
 seat seat0 xcursor_theme Banana
 
 #swayfx exclusive
