@@ -67,7 +67,7 @@ output HDMI-A-2 resolution 1920x1080@75hz position 2760,280 transform 90
 # Basics:
 #
     # Start a terminal
-    bindsym $mod+Return exec $term
+    bindsym $mod+t exec $term
     bindsym $mod+c exec $browser
     # Kill focused window
     bindsym $mod+q kill
@@ -148,12 +148,12 @@ output HDMI-A-2 resolution 1920x1080@75hz position 2760,280 transform 90
     bindsym $mod+v splitv
 
     # Switch the current container between different layout styles
-    bindsym $mod+s layout stacking
-    bindsym $mod+w layout tabbed
-    bindsym $mod+e layout toggle split
+    #bindsym $mod+s layout stacking
+    #bindsym $mod+w layout tabbed
+    bindsym $mod+s layout toggle split
 
     # Make the current focus fullscreen
-    bindsym $mod+f fullscreen
+    bindsym $mod+Return fullscreen
 
     # Toggle the current focus between tiling and floating mode
     bindsym $mod+Shift+space floating toggle
