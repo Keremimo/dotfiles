@@ -173,6 +173,12 @@ output HDMI-A-2 resolution 1920x1080@75hz position 2760,280 transform 90
 
     # Move focus to the parent container
     bindsym $mod+a focus parent
+
+    default_border none
+    default_floating_border none
+    font pango: monospace 0.001
+    titlebar_padding 1
+    titlebar_border_thickness 0
 #
 # Scratchpad:
 #
