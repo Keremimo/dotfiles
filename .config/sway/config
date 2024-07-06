@@ -69,7 +69,7 @@ output HDMI-A-2 resolution 1920x1080@75hz position 2760,280 transform 90
     bindsym $mod+q kill
 
     # Start your launcher
-    bindsym $mod+d exec $menu
+    bindsym $mod+space exec $menu
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -151,25 +151,18 @@ output HDMI-A-2 resolution 1920x1080@75hz position 2760,280 transform 90
 #
 # Layout stuff:
 #
-    # You can "split" the current object of your focus with
-    # $mod+b or $mod+v, for horizontal and vertical splits
-    # respectively.
-    bindsym $mod+s split toggle
+    #Deprecated due to autotiling
+    #bindsym $mod+s split toggle
     #bindsym $mod+v splitv
-
-    # Switch the current container between different layout styles
-    #bindsym $mod+s layout stacking
-    #bindsym $mod+w layout tabbed
-    #bindsym $mod+s layout toggle split
 
     # Make the current focus fullscreen
     bindsym $mod+Return fullscreen
 
     # Toggle the current focus between tiling and floating mode
-    bindsym $mod+Shift+space floating toggle
+    bindsym $mod+f floating toggle
 
     # Swap focus between the tiling area and the floating area
-    bindsym $mod+space focus mode_toggle
+    #bindsym $mod+space focus mode_toggle
 
     # Move focus to the parent container
     bindsym $mod+a focus parent
@@ -216,10 +209,6 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
-#
-# Status Bar:
-#
-# Read `man 5 sway-bar` for more information about this section.
 bar {
     # When the status_command prints a new line to stdout, swaybar updates.
     # The default just shows the current date and time.
@@ -237,5 +226,20 @@ repeat_rate 35
 }
 
 seat seat0 xcursor_theme Banana
+
+#swayfx exclusive
+####
+blur enable
+smart_borders on
+gaps inner 10
+layer_effects "waybar" 'blur enable; shadows enable; corner_radius 6'"
+smart_gaps on
+smart_corner_radius on
+corner_radius 15
+shadows on
+shadow_blur_radius 20
+####
+# Enable autotiling
+exec_always autotiling
 
 include /etc/sway/config.d/*
