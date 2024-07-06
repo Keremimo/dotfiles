@@ -91,10 +91,10 @@ output HDMI-A-2 resolution 1920x1080@75hz position 2760,280 transform 90
 # Moving around:
 #
     # Move your focus around
-    bindsym $mod+$left focus left
-    bindsym $mod+$down focus down
-    bindsym $mod+$up focus up
-    bindsym $mod+$right focus right
+    #bindsym $mod+$left focus left
+    #bindsym $mod+$down focus down
+    #bindsym $mod+$up focus up
+    #bindsym $mod+$right focus right
     # Or use $mod+[up|down|left|right]
     bindsym $mod+Left focus left
     bindsym $mod+Down focus down
@@ -102,10 +102,10 @@ output HDMI-A-2 resolution 1920x1080@75hz position 2760,280 transform 90
     bindsym $mod+Right focus right
 
     # Move the focused window with the same, but add Shift
-    bindsym $mod+Shift+$left move left
-    bindsym $mod+Shift+$down move down
-    bindsym $mod+Shift+$up move up
-    bindsym $mod+Shift+$right move right
+    #bindsym $mod+Shift+$left move left
+    #bindsym $mod+Shift+$down move down
+    #bindsym $mod+Shift+$up move up
+    #bindsym $mod+Shift+$right move right
     # Ditto, with arrow keys
     bindsym $mod+Shift+Left move left
     bindsym $mod+Shift+Down move down
@@ -115,6 +115,8 @@ output HDMI-A-2 resolution 1920x1080@75hz position 2760,280 transform 90
 # Workspaces:
 #
     # Switch to workspace
+    bindsym $mod+$left workspace prev
+    bindsym $mod+$right workspace next
     bindsym $mod+1 workspace number 1
     bindsym $mod+2 workspace number 2
     bindsym $mod+3 workspace number 3
@@ -126,6 +128,8 @@ output HDMI-A-2 resolution 1920x1080@75hz position 2760,280 transform 90
     bindsym $mod+9 workspace number 9
     bindsym $mod+0 workspace number 10
     # Move focused container to workspace
+    bindsym $mod+Shift+$left move container to workspace prev
+    bindsym $mod+Shift+$right move container to workspace next
     bindsym $mod+Shift+1 move container to workspace number 1
     bindsym $mod+Shift+2 move container to workspace number 2
     bindsym $mod+Shift+3 move container to workspace number 3
@@ -144,13 +148,13 @@ output HDMI-A-2 resolution 1920x1080@75hz position 2760,280 transform 90
     # You can "split" the current object of your focus with
     # $mod+b or $mod+v, for horizontal and vertical splits
     # respectively.
-    bindsym $mod+b splith
-    bindsym $mod+v splitv
+    bindsym $mod+s split toggle
+    #bindsym $mod+v splitv
 
     # Switch the current container between different layout styles
     #bindsym $mod+s layout stacking
     #bindsym $mod+w layout tabbed
-    bindsym $mod+s layout toggle split
+    #bindsym $mod+s layout toggle split
 
     # Make the current focus fullscreen
     bindsym $mod+Return fullscreen
