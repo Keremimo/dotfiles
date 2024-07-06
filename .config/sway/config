@@ -1,6 +1,7 @@
 # Auto exec
 exec_always autotiling
 exec keepassxc
+exec swaylock
 
 ### Variables
 #
@@ -18,6 +19,14 @@ set $browser chromium
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
 set $menu rofi -show run
+
+bindsym $mod+p exec swaylock
+
+exec swayidle -w \
+	timeout 1800 'swaylock -f' \
+	timeout 1805 'swaymsg "output * power off"' \
+	resume 'swaymsg "output * power on"' \
+before-sleep 'playerctl pause; swaylock'
 
 ### Output configuration
 #
