@@ -68,7 +68,7 @@ output HDMI-A-2 resolution 1920x1080@75hz position 2760,280 transform 90
 #
     # Start a terminal
     bindsym $mod+Return exec $term
-
+    bindsym $mod+c exec $browser
     # Kill focused window
     bindsym $mod+q kill
 
