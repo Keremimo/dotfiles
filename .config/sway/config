@@ -66,6 +66,8 @@ output HDMI-A-2 resolution 1920x1080@75hz position 2760,280 transform 90
 #
 # Basics:
 #
+    #Take a screenshot
+    bindsym Print exec grim -g "$(slurp)" - | wl-copy
     # Start a terminal
     bindsym $mod+t exec $term
     bindsym $mod+c exec $browser
