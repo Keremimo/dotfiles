@@ -236,4 +236,6 @@ repeat_delay 250
 repeat_rate 35
 }
 
+seat seat0 xcursor_theme Banana
+
 include /etc/sway/config.d/*
