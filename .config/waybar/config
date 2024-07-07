@@ -27,9 +27,9 @@
     "warning": 30,
     "critical": 5
   },
-  "format": "BAT0: {capacity}%",
-  "format-charging": "BAT0: {capacity}% (charging)",
-  "format-plugged": "BAT0: {capacity}% (plugged)",
+  "format": "󰁹/1 {capacity}%",
+  "format-charging": "󰂊 /1 {capacity}%",
+  "format-plugged": "󰁹/1 {capacity}%",
 },
 "battery#bat1": {
   "bat": "BAT1",
@@ -38,9 +38,9 @@
     "warning": 30,
     "critical": 5
   },
-  "format": "BAT1: {capacity}% ",
-  "format-charging": "BAT1: {capacity}% (charging)",
-  "format-plugged": "BAT1: {capacity}% (plugged)",
+  "format": "󰁹/2 {capacity}% ",
+  "format-charging": "󰁹/2 {capacity}%",
+  "format-plugged": "󰂅 /2 {capacity}%",
 },
 "pulseaudio": {
   "format": "{volume}% {icon}",
@@ -50,7 +50,7 @@
 },
 "cpu": {
   "interval": 10,
-  "format": "CPU: {usage}%"
+  "format": " {usage}%"
 },
 "tray": {
   "icon-size": 20,
