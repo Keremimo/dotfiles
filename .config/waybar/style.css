@@ -1,18 +1,21 @@
 * {
-font-family: 'CaskaydiaCove Nerd Font';
-font-size: 13px;
-color: white;
+    font-family: 'CaskaydiaCove Nerd Font';
+    font-size: 13px;
+    color: white;
 }
+
 window {
-background: none;
-border-bottom: none;
+    background: none;
+    border-bottom: none;
 }
+
 #workspaces button {
     background-color: #5f676a;
     color: #ffffff;
 }
+
 #workspaces button:hover {
-    background: rgba(0,0,0,0.2);
+    background: rgba(0, 0, 0, 0.2);
 }
 
 #workspaces button.focused {
@@ -26,6 +29,7 @@ border-bottom: none;
 #workspaces button.active {
     background-color: #285577;
 }
+
 #clock,
 #battery,
 #cpu,
@@ -40,34 +44,40 @@ border-bottom: none;
     padding-left: 5px;
     padding-right: 5px;
 }
-.modules-left > widget:first-child > #workspaces {
+
+.modules-left>widget:first-child>#workspaces {
     margin-left: 0;
 }
 
 
-.modules-right > widget:last-child > #workspaces {
+.modules-right>widget:last-child>#workspaces {
     margin-right: 0;
 }
+
 .modules-right {
-    border: 2px solid black;
-    border-bottom-left-radius: 30%;
-    border-top-left-radius: 30%;
-    background: rgba(90,34,139,0.3);
+    border: 2px inset rgba(90, 34, 139, 0.5);
+    border-radius: 30% 0 0 30%;
+    background: rgba(90, 34, 139, 0.2);
+    border-bottom: none;
+    border-top: none;
     padding-left: 10px;
 }
 
 .modules-left {
-    border: 2px solid black;
-    border-bottom-right-radius: 30%;
-    background: rgba(90,34,139,0.3);
+    border: 2px inset rgba(90, 34, 139, 0.5);
+    border-radius: 0 30% 30% 0;
+    background: rgba(90, 34, 139, 0.2);
+    border-top: none;
+    border-bottom: none;
     padding-right: 25px;
 }
+
 .modules-center {
-    border: 2px solid black;
-    border-bottom-right-radius: 30%;
-    border-bottom-left-radius: 30%;
-    background: rgba(90,34,139,0.3);
-    padding: 0 25px;
+    border: 2px inset rgba(90, 34, 139, 0.5);
+    border-radius: 0 0 30% 30%;
+    background: rgba(90, 34, 139, 0.4);
+    padding: 0px;
+    border-top: none;
 }
 
 @keyframes blink {
@@ -91,11 +101,11 @@ label:focus {
     background-color: #000000;
 }
 
-#tray > .passive {
+#tray>.passive {
     -gtk-icon-effect: dim;
 }
 
-#tray > .needs-attention {
+#tray>.needs-attention {
     -gtk-icon-effect: highlight;
     background-color: #eb4d4b;
 }
