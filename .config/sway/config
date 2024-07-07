@@ -242,6 +242,7 @@ accel_profile "flat"
 input type:touchpad {
     tap enabled
     natural_scroll enabled
+    pointer_accel 0.7
 }
 
 seat seat0 xcursor_theme Banana
@@ -250,12 +251,12 @@ seat seat0 xcursor_theme Banana
 ####
 blur enable
 smart_borders on
-gaps inner 10
+gaps inner 5
 layer_effects "waybar" 'blur enable; shadows enable; corner_radius 6'"
 smart_gaps on
 smart_corner_radius on
 corner_radius 15
-shadows on
+shadows off
 shadow_blur_radius 20
 ####
 
