@@ -48,8 +48,9 @@
 "pulseaudio": {
   "format": "{volume}% {icon}",
   "format-icons": {
-    "default": ["\uf026", "\uf027", "\uf028"]
-  }
+    "default": ["\uf026", "\uf027", "\uf028"],
+  },
+    "on-click": "exec pavucontrol",
 },
 "cpu": {
   "interval": 10,
