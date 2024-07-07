@@ -1,6 +1,7 @@
 # Auto exec
 exec_always autotiling
 exec keepassxc
+exec nm-applet
 exec swaylock
 
 ### Variables
