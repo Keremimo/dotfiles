@@ -23,11 +23,7 @@ set $menu fuzzel
 
 bindsym $mod+p exec swaylock
 
-exec swayidle -w \
-	timeout 1800 'swaylock -f' \
-	timeout 1805 'swaymsg "output * power off"' \
-	resume 'swaymsg "output * power on"' \
-before-sleep 'playerctl pause; swaylock'
+
 
 ### Output configuration
 #
@@ -43,32 +39,22 @@ output HDMI-A-2 resolution 1920x1080@75hz position 2760,280 transform 90
 #
 # You can get the names of your outputs by running: swaymsg -t get_outputs
 
+#
 ### Idle configuration
 #
-# Example configuration:
-#
-# exec swayidle -w \
-#          timeout 300 'swaylock -f -c 000000' \
-#          timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
-#          before-sleep 'swaylock -f -c 000000'
-#
-# This will lock your screen after 300 seconds of inactivity, then turn off
-# your displays after another 300 seconds, and turn your screens back on when
-# resumed. It will also lock your screen before your computer goes to sleep.
+exec swayidle -w \
+	timeout 1800 'swaylock -f' \
+	timeout 1805 'swaymsg "output * power off"' \
+	resume 'swaymsg "output * power on"' \
+before-sleep 'playerctl pause; swaylock'
 
 ### Input configuration
 #
-# Example configuration:
-#
-#   input "2:14:SynPS/2_Synaptics_TouchPad" {
-#       dwt enabled
-#       tap enabled
-#       natural_scroll enabled
-#       middle_emulation enabled
-#   }
-#
-# You can get the names of your inputs by running: swaymsg -t get_inputs
-# Read `man 5 sway-input` for more information about this section.
+input type:touchpad {
+    tap enabled
+    natural_scroll enabled
+    pointer_accel 0.7
+}
 
 ### Key bindings
 #
@@ -101,22 +87,12 @@ output HDMI-A-2 resolution 1920x1080@75hz position 2760,280 transform 90
 # Moving around:
 #
     # Move your focus around
-    #bindsym $mod+$left focus left
-    #bindsym $mod+$down focus down
-    #bindsym $mod+$up focus up
-    #bindsym $mod+$right focus right
-    # Or use $mod+[up|down|left|right]
     bindsym $mod+Left focus left
     bindsym $mod+Down focus down
     bindsym $mod+Up focus up
     bindsym $mod+Right focus right
 
     # Move the focused window with the same, but add Shift
-    #bindsym $mod+Shift+$left move left
-    #bindsym $mod+Shift+$down move down
-    #bindsym $mod+Shift+$up move up
-    #bindsym $mod+Shift+$right move right
-    # Ditto, with arrow keys
     bindsym $mod+Shift+Left move left
     bindsym $mod+Shift+Down move down
     bindsym $mod+Shift+Up move up
@@ -152,7 +128,9 @@ output HDMI-A-2 resolution 1920x1080@75hz position 2760,280 transform 90
     bindsym $mod+Shift+0 move container to workspace number 10
     # Note: workspaces can have any name you want, not just numbers.
     # We just use 1-10 as the default.
-    #Hardware keys:
+#
+#Hardware keys:
+#
     bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
     bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
     bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
@@ -165,18 +143,11 @@ output HDMI-A-2 resolution 1920x1080@75hz position 2760,280 transform 90
 #
 # Layout stuff:
 #
-    #Deprecated due to autotiling
-    #bindsym $mod+s split toggle
-    #bindsym $mod+v splitv
-
     # Make the current focus fullscreen
     bindsym $mod+Return fullscreen
 
     # Toggle the current focus between tiling and floating mode
     bindsym $mod+f floating toggle
-
-    # Swap focus between the tiling area and the floating area
-    #bindsym $mod+space focus mode_toggle
 
     # Move focus to the parent container
     bindsym $mod+a focus parent
@@ -189,9 +160,6 @@ output HDMI-A-2 resolution 1920x1080@75hz position 2760,280 transform 90
 #
 # Scratchpad:
 #
-    # Sway has a "scratchpad", which is a bag of holding for windows.
-    # You can send windows there and get them back later.
-
     # Move the currently focused window to the scratchpad
     bindsym $mod+Shift+minus move scratchpad
 
@@ -202,10 +170,6 @@ output HDMI-A-2 resolution 1920x1080@75hz position 2760,280 transform 90
 # Resizing containers:
 #
 mode "resize" {
-    # left will shrink the containers width
-    # right will grow the containers width
-    # up will shrink the containers height
-    # down will grow the containers height
     bindsym $left resize shrink width 10px
     bindsym $down resize grow height 10px
     bindsym $up resize shrink height 10px
@@ -238,12 +202,6 @@ input * {
 repeat_delay 250
 repeat_rate 35
 accel_profile "flat"
-}
-
-input type:touchpad {
-    tap enabled
-    natural_scroll enabled
-    pointer_accel 0.7
 }
 
 seat seat0 xcursor_theme Banana
