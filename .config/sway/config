@@ -28,7 +28,7 @@ bindsym $mod+p exec swaylock
 ### Output configuration
 #
 # Use 'azote' for wallpaper instead of the line below
-output * bg ~/Wallpapers/img1.wallspic.com-woman_in_black_jacket_holding_umbrella-3840x2160.jpg fill
+output * bg ~/Wallpapers/173652-stargazing_cat-cat-anime-light-purple-x750.jpg fill
 #
 # Example configuration:
 #
