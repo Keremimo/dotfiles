@@ -38,7 +38,7 @@
     "warning": 30,
     "critical": 5
   },
-  "format": "󰁹/2 {capacity}% ",
+  "format": "󰁹/2 {capacity}%",
   "format-charging": "󰁹/2 {capacity}%",
   "format-plugged": "󰂅 /2 {capacity}%",
 },
@@ -73,4 +73,12 @@
       "tooltip": false,
       "on-click": "exec nm-connection-editor"
     },
+    "idle_inhibitor": {
+	"format": "{icon}",
+	"format-icons": {
+		"activated": " 󰈈 ",
+		"deactivated": " 󰈉 "
+	},
+	"timeout": 30.5
+}
 }
