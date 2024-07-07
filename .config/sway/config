@@ -60,6 +60,16 @@ input type:touchpad {
     natural_scroll enabled
     pointer_accel 0.7
 }
+input * {
+repeat_delay 250
+repeat_rate 35
+accel_profile "flat"
+}
+
+input "2:10:TPPS/2_IBM_TrackPoint" {
+pointer_accel 1.0
+accel_profile flat
+}
 
 ### Key bindings
 #
@@ -203,12 +213,7 @@ bar {
     }
 }
 
-input * {
-repeat_delay 250
-repeat_rate 35
-accel_profile "flat"
-}
-
+# Enable Banana cursor theme
 seat seat0 xcursor_theme Banana
 
 #swayfx exclusive
