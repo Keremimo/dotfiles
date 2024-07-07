@@ -236,6 +236,7 @@ bar {
 input * {
 repeat_delay 250
 repeat_rate 35
+accel_profile "flat"
 }
 
 input type:touchpad {
