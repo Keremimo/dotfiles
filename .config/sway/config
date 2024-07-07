@@ -37,6 +37,7 @@ output * bg ~/Wallpapers/img1.wallspic.com-woman_in_black_jacket_holding_umbrell
 #
 output eDP-1 resolution 1920x1080@60hz position 3840,1080
 output DP-3 resolution 1920x1080@144hz position 3840,0
+output DP-4 resolution 1920x1080@144hz position 3840,0
 output HDMI-A-1 resolution 1920x1080@75hz position 2760,280 transform 90
 output HDMI-A-2 resolution 1920x1080@75hz position 2760,280 transform 90
 #
