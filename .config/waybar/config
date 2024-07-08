@@ -1,10 +1,10 @@
 {
-  "layer": "bottom",
+  "layer": "top",
   "position": "top",
   "height": 24,
   "spacing": 5,
-  "modules-left": ["sway/workspaces", "cpu", "network"],
-  "modules-center": ["tray"],
+  "modules-left": ["sway/workspaces"],
+  "modules-center": ["backlight","tray","pulseaudio"],
   "modules-right": ["group/right"],
     "clock": {
   "format": "{:%d/%m/%y %H:%M}",
@@ -18,10 +18,21 @@
 },
 "group/right": {
 "orientation": "horizontal",
-"modules": ["bluetooth","battery","battery#bat1","pulseaudio","clock","idle_inhibitor"]},
+"modules": ["bluetooth","group/batteries","clock","idle_inhibitor"]},
 "memory": {
   "interval": 30,
   "format": "{used:0.1f}GiB/{total:0.1f}GiB ({percentage}%))"
+},
+"group/batteries": {
+"orientation": "horizontal",
+"modules": ["battery", "battery#bat1"],
+"children-class": "batteries-group",
+"name": "batterygroup"
+},
+"backlight": {
+	"device": "intel_backlight",
+	"format": "{icon} {percent}%",
+	"format-icons": ["", ""]
 },
 "battery": {
   "bat": "BAT0",
@@ -61,9 +72,9 @@
   "spacing": 10
 },
     "bluetooth": {
-      "format": "<span color='#b4befe'></span> {status}",
+      "format": "<span color='#8839ef'>󰂱</span> {status}",
       "format-disabled": "", // an empty format will hide the module
-      "format-connected": "<span color='#b4befe'></span> {num_connections}",
+      "format-connected": "<span color='#fe640b'></span> {num_connections}",
       "tooltip-format": "{device_enumerate}",
       "tooltip-format-enumerate-connected": "{device_alias}   {device_address}",
       "on-click": "exec blueman-manager"
