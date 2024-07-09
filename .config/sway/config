@@ -2,6 +2,8 @@
 exec autotiling
 exec keepassxc
 exec nm-applet
+# Disable touchpad on external mouse connection
+exec swaymsg input type:touchpad events disabled_on_external_mouse
 
 ### Variables
 #
