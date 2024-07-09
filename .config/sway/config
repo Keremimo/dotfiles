@@ -2,13 +2,12 @@
 exec autotiling
 exec keepassxc
 exec nm-applet
-# Disable touchpad on external mouse connection
-exec swaymsg input type:touchpad events disabled_on_external_mouse
 
 ### Variables
 #
 # Logo key. Use Mod1 for Alt.
 set $mod Mod4
+
 # Home row direction keys, like vim
 set $left h
 set $down j
@@ -60,6 +59,7 @@ input type:touchpad {
     tap enabled
     natural_scroll enabled
     pointer_accel 0.7
+    events disabled_on_external_mouse
 }
 input * {
 repeat_delay 250
@@ -93,9 +93,12 @@ accel_profile flat
     # Change normal to inverse to use left mouse button for resizing and right
     # mouse button for dragging.
     floating_modifier $mod normal
+    # floating_modifier $mod2 normal
 
     # Reload the configuration file
     bindsym $mod+Shift+c reload
+
+    bindsym --whole-window BTN_FORWARD floating toggle
 
     # Exit sway (logs you out of your Wayland session)
     bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
