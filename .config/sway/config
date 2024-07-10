@@ -2,6 +2,7 @@
 exec autotiling
 exec keepassxc
 exec nm-applet
+exec dunst
 
 ### Variables
 #
