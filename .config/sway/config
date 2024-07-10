@@ -22,6 +22,8 @@ set $browser chromium
 set $menu fuzzel
 
 bindsym $mod+p exec swaylock
+bindsym $mod+Shift+r exec wf-recorder -g "$(slurp)" -F fps = 30 -c gif -f ~/Videos/recording_$(date +"%Y-%m-%d_%H:%M:%S.gif") | bash
+bindsym $mod+Shift+s exec killall -s SIGINT wf-recorder
 
 ### Float rules
 #
