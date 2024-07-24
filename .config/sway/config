@@ -64,6 +64,7 @@ input type:touchpad {
     natural_scroll enabled
     pointer_accel 0.7
     events disabled_on_external_mouse
+    scroll_factor 0.1
 }
 input * {
 repeat_delay 200
