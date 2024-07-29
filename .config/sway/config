@@ -2,8 +2,8 @@
 exec autotiling
 exec keepassxc
 exec nm-applet
-exec dunst
 exec udiskie
+exec wired
 
 ### Variables
 #
@@ -36,7 +36,7 @@ for_window [app_id="blueman-manager"] floating enable
 ### Output configuration
 #
 # Use 'azote' for wallpaper instead of the line below
-output * bg ~/Wallpapers/173652-stargazing_cat-cat-anime-light-purple-x750.jpg fill
+output * bg ~/Wallpapers/yellowtaxi.gif fill
 #
 # Example configuration:
 #
