@@ -8,11 +8,11 @@
   "osd.progress.pack.h": "end",
   "osd.progress.vertical": true,
   "terminal": "kitty",
-  "menus.clock.weather.key": "",
-  "menus.clock.weather.location": "Los Angeles",
-  "menus.clock.weather.unit": "imperial",
+  "menus.clock.weather.key": "2f72f0378028484caad182532242907",
+  "menus.clock.weather.location": "Leuven",
+  "menus.clock.weather.unit": "metric",
   "menus.clock.weather.interval": 60000,
-  "menus.clock.time.military": false,
+  "menus.clock.time.military": true,
   "menus.dashboard.directories.right.directory3.command": "thunar",
   "menus.dashboard.directories.right.directory3.label": "󱂵 Home",
   "menus.dashboard.directories.right.directory2.command": "thunar Pictures",
@@ -348,5 +348,5 @@
   "theme.notification.background": "#181825",
   "theme.font.weight": 400,
   "theme.font.name": "JetBrainsMono Nerd Font",
-  "theme.font.size": "1rem"
+  "theme.font.size": "0.9rem"
 }
