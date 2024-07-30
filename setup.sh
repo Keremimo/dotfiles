@@ -30,3 +30,5 @@ chsh -s /usr/bin/fish
 
 read -rp "Now set up your Spotify. Enter to continue."
 curl -fsSL https://raw.githubusercontent.com/spicetify/cli/main/install.sh | sh
+
+echo "Setup complete. Now reboot."
