@@ -21,7 +21,7 @@ git clone https://aur.archlinux.org/paru.git
 cd paru
 makepkg -si --noconfirm
 cd ..
-paru -S grimblast gpu-screen-recorder hyprpicker aylurs-gtk-shell-git visual-studio-code-bin
+paru -S --noconfirm grimblast gpu-screen-recorder hyprpicker aylurs-gtk-shell-git visual-studio-code-bin
 git clone git@github.com:Keremimo/dotfiles.git
 cp -rf ~/dotfiles/{.,}* ~/.config/
 mkdir -p ~/Wallpapers
