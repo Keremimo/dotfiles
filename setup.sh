@@ -23,9 +23,9 @@ makepkg -si --noconfirm
 cd ..
 paru -S --noconfirm grimblast gpu-screen-recorder hyprpicker aylurs-gtk-shell-git visual-studio-code-bin
 git clone git@github.com:Keremimo/dotfiles.git
-cp -rf ~/dotfiles/{.,}* ~/.config/
+cp -rf ~/dotfiles/.config/* ~/.config/
 mkdir -p ~/Wallpapers
-mv -rf ~/.config/Wallpapers ~/Wallpapers
+mv -rf ~/dotfiles/Wallpapers/* ~/Wallpapers
 chsh -s /usr/bin/fish
 
 read -rp "Now set up your Spotify. Enter to continue."
