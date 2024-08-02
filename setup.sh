@@ -25,7 +25,7 @@ paru -S --noconfirm grimblast gpu-screen-recorder hyprpicker aylurs-gtk-shell-gi
 git clone git@github.com:Keremimo/dotfiles.git
 cp -rf ~/dotfiles/.config/* ~/.config/
 mkdir -p ~/Wallpapers
-mv -rf ~/dotfiles/Wallpapers/* ~/Wallpapers
+cp -rf ~/dotfiles/Wallpapers/* ~/Wallpapers
 chsh -s /usr/bin/fish
 
 read -rp "Now set up your Spotify. Enter to continue."
