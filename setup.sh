@@ -5,7 +5,6 @@ sudo systemctl enable --now bluetooth
 
 sudo pacman -S --noconfirm --needed base-devel unzip git curl wget fuzzel hyprland hyprlock rust brightnessctl neovim kitty fzf polkit chromium nerd-fonts gtk3 gtk4 pipewire bluez bluez-utils btop networkmanager dart-sass python gnome-bluetooth-3.0 sddm fish starship zellij swww thefuck wl-clipboard zoxide nodejs yarn npm gnome-keyring flatpak gnome-software udiskie thunar qt5-wayland qt6-wayland obsidian spotify-launcher &&
 
-read -rp "Now your Git will be configured. Press enter to continue."
 git config --global user.name "keremimo"
 git config --global user.email "nyaa@live.com"
 git config --global init.defaultBranch main
@@ -26,9 +25,6 @@ git clone git@github.com:Keremimo/dotfiles.git
 cp -rf ~/dotfiles/.config/* ~/.config/
 mkdir -p ~/Wallpapers
 cp -rf ~/dotfiles/Wallpapers/* ~/Wallpapers
-chsh -s /usr/bin/fish
-
-read -rp "Now set up your Spotify. Enter to continue."
-curl -fsSL https://raw.githubusercontent.com/spicetify/cli/main/install.sh | sh
-
-echo "Setup complete. Now reboot."
+git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it
+cd .bash_it
+./install.sh
