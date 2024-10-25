@@ -3,7 +3,7 @@ set -e
 
 sudo systemctl enable --now bluetooth
 
-sudo pacman -S --noconfirm --needed base-devel unzip git curl wget fuzzel hyprland hyprlock rust brightnessctl neovim kitty fzf polkit chromium nerd-fonts gtk3 gtk4 pipewire bluez bluez-utils btop networkmanager dart-sass python gnome-bluetooth-3.0 sddm fish starship zellij swww thefuck wl-clipboard zoxide nodejs yarn npm gnome-keyring flatpak gnome-software udiskie thunar qt5-wayland qt6-wayland obsidian spotify-launcher &&
+sudo pacman -S --noconfirm --needed base-devel unzip git curl wget fuzzel hyprland hyprlock rust brightnessctl neovim kitty fzf polkit chromium nerd-fonts gtk3 gtk4 pipewire bluez bluez-utils btop networkmanager dart-sass python gnome-bluetooth-3.0 sddm fish starship zellij swww thefuck wl-clipboard zoxide nodejs yarn npm gnome-keyring flatpak gnome-software udiskie thunar qt5-wayland qt6-wayland obsidian spotify-launcher hyprpaper &&
 
 git config --global user.name "keremimo"
 git config --global user.email "nyaa@live.com"
