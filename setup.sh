@@ -3,9 +3,11 @@ set -e
 
 sudo systemctl enable --now bluetooth
 
-sudo pacman -S --noconfirm --needed base-devel unzip git curl wget fuzzel hyprland hyprlock rust brightnessctl neovim kitty fzf polkit chromium nerd-fonts gtk3 gtk4 pipewire bluez bluez-utils btop networkmanager dart-sass python gnome-bluetooth-3.0 sddm fish starship zellij swww thefuck wl-clipboard zoxide nodejs yarn npm gnome-keyring flatpak gnome-software udiskie thunar qt5-wayland qt6-wayland obsidian spotify-launcher hyprpaper &&
+sudo pacman -S --noconfirm --needed base-devel unzip git curl wget bash-completion fuzzel rustup neovim kitty fzf polkit chromium nerd-fonts gtk3 gtk4 pipewire btop networkmanager python sddm zellij swww thefuck wl-clipboard zoxide nodejs yarn npm gnome-keyring flatpak udiskie qt5-wayland qt6-wayland &&
 
-git config --global user.name "keremimo"
+rustup default stable
+
+git config --global user.name "Keremimo"
 git config --global user.email "nyaa@live.com"
 git config --global init.defaultBranch main
 git config --global color.ui auto
@@ -32,6 +34,6 @@ echo "y"
 echo "y"
 bash-it enable plugin fzf zoxide alias-completion
 cd
-git clone --recursive --depth 1 --shallow-submodules https://github.com/akinomyoga/ble.sh.git
-make -C ble.sh install PREFIX=~/.local
-echo 'source ~/.local/share/blesh/ble.sh' >> ~/.bashrc
+paru -S --needed "luarocks" "python" "yazi" "fd" "git-delta" "grcov" "rustup" "yarn" "python-pytest" "gcc" "binutils" "dotnet-runtime" "dotnet-sdk" "aspnet-runtime" "mono" "jdk-openjdk" "dart" "kotlin" "elixir" "npm" "nodejs" "typescript" "make" "go" "nasm" "r" "nuitka" "python" "ruby" "perl" "lua" "pyinstaller" "swift-bin" "gcc-fortran" "fortran-fpm-bin" "doxygen" "ldoc" "ruby-yard"; yarn global add "jest" "jsdoc" "typedoc"; cargo install "cargo-nextest"; go install "golang.org/x/tools/cmd/godoc@latest"
+# Strongly recommended: Fork the repo and clone YOUR fork.
+git clone git@github.com:Keremimo/NormalNvim.git ~/.config/nvim
