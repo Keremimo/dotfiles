@@ -8,6 +8,7 @@ starship init fish | source
 fish_add_path /home/kerem/.spicetify
 zoxide init fish | source
 alias cd=z
+alias ls=eza
 
 thefuck --alias | source
 
