@@ -3,7 +3,7 @@
   "position": "top",
   "height": 24,
   "spacing": 5,
-  "modules-left": ["sway/workspaces"],
+  "modules-left": ["hyprland/workspaces"],
   "modules-center": ["backlight","tray","pulseaudio"],
   "modules-right": ["group/right"],
     "clock": {
@@ -25,7 +25,7 @@
 },
 "group/batteries": {
 "orientation": "horizontal",
-"modules": ["battery", "battery#bat1"],
+"modules": ["battery"],
 "children-class": "batteries-group",
 "name": "batterygroup"
 },
@@ -41,9 +41,9 @@
     "warning": 30,
     "critical": 5
   },
-  "format": "󰁹/1 {capacity}%",
-  "format-charging": "󰂊 /1 {capacity}%",
-  "format-plugged": "󰁹/1 {capacity}%",
+  "format": "󰁹 {capacity}%",
+  "format-charging": "󰂊  {capacity}%",
+  "format-plugged": "󰁹 {capacity}%",
 },
 "battery#bat1": {
   "bat": "BAT1",
