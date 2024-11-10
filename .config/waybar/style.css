@@ -1,5 +1,5 @@
 * {
-  font-family: "CaskaydiaCove Nerd Font";
+  font-family: "CaskaydiaCove Nerd Font Mono";
   font-size: 16px;
   font-weight: 400;
 }
@@ -79,7 +79,7 @@ window {
   border-right: none;
   padding-left: 10px;
   margin-left: -25px;
-  min-width: 15rem;
+  min-width: 12rem;
 }
 
 #pulseaudio {

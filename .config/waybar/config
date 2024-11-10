@@ -7,7 +7,8 @@
   "modules-center": ["backlight","tray","pulseaudio"],
   "modules-right": ["group/right"],
     "clock": {
-  "format": "{:%d/%m/%y %H:%M}",
+  "format": "{:%d/%m/%y %H:%M:%S}",
+  "interval": 1,
   },
   "idle_inhibitor": {
   "format": "{icon}",
