@@ -10,8 +10,8 @@ window {
 }
 
 #workspaces button {
-  background-color: #ef9f76;
-  color: #ffffff;
+  background-color: #45475a;
+  color: #cdd6f4;
   border-radius: 20px;
   border: none;
   min-width: 20px;
@@ -26,43 +26,42 @@ window {
 }
 
 #workspaces button.urgent {
-  background-color: #e78284;
+  background-color: #6c7086;
 }
 
 #workspaces button.active {
-  background-color: #f4b8e4;
+  background-color: #7f849c;
 }
 
 .modules-right {
-  border: 4px solid #e6e9ef;
   border-right: none;
   border-radius: 20px 0 0 20px;
-  background: rgba(48, 52, 70, 0.8);
-  color: rgb(198, 208, 245);
+  background: #1e1e2e;
+  color: #cdd6f4;
 }
 
 .modules-left {
-  border: 4px solid #e6e9ef;
   border-left: none;
   border-radius: 0 20px 20px 0;
   background: #292c3c;
+  color: #cdd6f4;
 }
 
 .modules-center {
-  border: 4px solid #e6e9ef;
   border-radius: 20px;
-  background: #f5a97f;
+  background: #313244;
   padding: 0px;
-  color: rgb(198, 208, 245);
+  color: #b4befe;
 }
 
 #tray {
   padding: 0 0px;
+  background: #313244;
 }
 
 #idle_inhibitor {
-  background: #ca9ee6;
-  color: black;
+  background: #1e1e2e;
+  color: #cdd6f4;
   border-bottom-left-radius: 20px;
   margin-left: -15px;
   padding-left: 0px;
@@ -70,8 +69,8 @@ window {
 }
 
 #clock {
-  background: #85c1dc;
-  color: #303446;
+  background: #181825;
+  color: #cba6f7;
   border-bottom-left-radius: 20px;
   border-top-left-radius: 20px;
   padding-right: 15px;
@@ -83,8 +82,8 @@ window {
 }
 
 #pulseaudio {
-  background: #e78284;
-  color: #181926;
+  background: #1e1e2e;
+  color: #f2cdcd;
   border-radius: 20px;
   padding-left: 20px;
   padding-right: 15px;
@@ -92,8 +91,8 @@ window {
 }
 
 #battery {
-  background: #f5a97f;
-  color: #181926;
+  background: #1e1e2e;
+  color: #74c7ec;
   border-radius: 20px;
   padding-right: 25px;
   padding-left: 10px;
@@ -111,8 +110,8 @@ window {
 /* } */
 
 #bluetooth {
-  background: #8aadf4;
-  color: #181926;
+  background: #11111b;
+  color: #cba6f7;
   padding-left: 10px;
   padding-right: 28px;
   border-bottom-left-radius: 20px;
@@ -121,11 +120,11 @@ window {
 }
 
 #backlight {
-  background: #ed8796;
+  background: #1e1e2e;
   padding-right: 20px;
   padding-left: 15px;
   border-radius: 20px;
-  color: #181926;
+  color: #f2cdcd;
 }
 
 #cpu {
@@ -180,7 +179,7 @@ label:focus {
 }
 
 #idle_inhibitor.activated {
-  background-color: #ca9ee6;
+  background-color: #313244;
   /* border-top-left-radius: 20px; */
   /* border-bottom-left-radius: 20px; */
   border-radius: 20px;
