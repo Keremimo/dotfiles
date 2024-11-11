@@ -1,6 +1,7 @@
 *
 !.gitignore
-!.config/
+!.config/*
 !.config/sway/*
 !.config/waybar/*
 !.config/fish/*
+!.config/nvim/*
