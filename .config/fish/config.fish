@@ -30,6 +30,12 @@ end
 starship init fish | source
 enable_transience
 
+set -Ux EDITOR nvim
+set fzf_preview_dir_cmd eza --all --color=always
+set fzf_fd_opts --hidden --max-depth 5
+
+fzf_configure_bindings --directory=\t
+
 # bun
 set --export BUN_INSTALL "$HOME/.bun"
 set --export PATH $BUN_INSTALL/bin $PATH
