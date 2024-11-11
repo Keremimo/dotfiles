@@ -1,4 +1,4 @@
-font-size = 15
+font-size = 14
 font-style = bold
 font-family = "DankMono Nerd Font"
 
@@ -9,4 +9,10 @@ keybind = ctrl+shift+comma=reload_config
 
 theme = catppuccin-mocha
 
-background-opacity = 0.70
+background-opacity = 0.90
+
+window-vsync = false
+
+#keybind = ctrl+shift+c=cancel
+#keybind = ctrl+c=copy_to_clipboard
+#keybind = ctrl+v=paste_from_clipboard
