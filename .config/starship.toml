@@ -1,11 +1,10 @@
 palette = "catppuccin_mocha"
 
 format = """
-[░▒▓](#6c7086)\
 [ 󰣇 ](bg:#6c7086 fg:#f2cdcd)\
-[](bg:#1e1e2e fg:#6c7086)\
+[](bg:#313244 fg:#6c7086)\
 $directory\
-[](fg:#222233 bg:#394260)\
+[](fg:#313244 bg:#394260)\
 $git_branch\
 $git_status\
 [](fg:#394260 bg:#1e1e2e)\
@@ -18,8 +17,12 @@ $time\
 [ ](fg:#1d2230)\
 \n$character"""
 
+[character] # The name of the module we are configuring is 'character'
+success_symbol = '[󰋇](#f2cdcd)' 
+error_symbol = '[](#f38ba8)'
+
 [directory]
-style = "fg:#cdd6f4 bg:#1e1e2e"
+style = "fg:#cdd6f4 bg:#313244"
 format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
