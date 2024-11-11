@@ -1,14 +1,14 @@
 palette = "catppuccin_mocha"
 
 format = """
-[░▒▓](#a3aed2)\
-[ 󰣇 ](bg:#a3aed2 fg:#090c0c)\
-[](bg:#769ff0 fg:#a3aed2)\
+[░▒▓](#6c7086)\
+[ 󰣇 ](bg:#6c7086 fg:#f2cdcd)\
+[](bg:#1e1e2e fg:#6c7086)\
 $directory\
-[](fg:#769ff0 bg:#394260)\
+[](fg:#222233 bg:#394260)\
 $git_branch\
 $git_status\
-[](fg:#394260 bg:#212736)\
+[](fg:#394260 bg:#1e1e2e)\
 $nodejs\
 $rust\
 $golang\
@@ -19,7 +19,7 @@ $time\
 \n$character"""
 
 [directory]
-style = "fg:#e3e5e5 bg:#769ff0"
+style = "fg:#cdd6f4 bg:#1e1e2e"
 format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
@@ -33,10 +33,10 @@ truncation_symbol = "…/"
 [git_branch]
 symbol = ""
 style = "bg:#394260"
-format = '[[ $symbol $branch ](fg:#769ff0 bg:#394260)]($style)'
+format = '[[ $symbol $branch ](fg:#cdd6f4 bg:#394260)]($style)'
 
 [git_status]
-style = "bg:#394260"
+style = "bg:#cdd6f4"
 format = '[[($all_status$ahead_behind )](fg:#769ff0 bg:#394260)]($style)'
 
 [nodejs]
@@ -62,7 +62,7 @@ format = '[[ $symbol ($version) ](fg:#769ff0 bg:#212736)]($style)'
 [time]
 disabled = false
 time_format = "%R" # Hour:Minute Format
-style = "bg:#1d2230"
+style = "bg:#1e1e2e"
 format = '[[  $time ](fg:#a0a9cb bg:#1d2230)]($style)'
 
 [palettes.catppuccin_mocha]
