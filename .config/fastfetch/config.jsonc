@@ -5,7 +5,7 @@
         "type": "chafa",
         "padding": {
             "top": 1
-        }
+        },
     },
     "display": {
         "separator": " "

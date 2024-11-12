@@ -8,7 +8,7 @@ font-thicken = false
 keybind = ctrl+shift+comma=reload_config
 
 theme = catppuccin-mocha
-
+mouse-hide-while-typing = true
 background-opacity = 0.90
 
 window-vsync = false
