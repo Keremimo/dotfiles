@@ -9,7 +9,7 @@ keybind = ctrl+shift+comma=reload_config
 
 theme = catppuccin-mocha
 mouse-hide-while-typing = true
-background-opacity = 0.90
+background-opacity = 0.80
 
 window-vsync = false
 
