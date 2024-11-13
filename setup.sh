@@ -24,7 +24,6 @@ git clone https://aur.archlinux.org/paru.git
 cd paru
 makepkg -si --noconfirm
 cd ..
-paru -S --noconfirm grimblast-git gpu-screen-recorder hyprpicker matugen-bin python-gpustat aylurs-gtk-shell-git
 git clone git@github.com:Keremimo/dotfiles.git
 cp -rf ~/dotfiles/.config/* ~/.config/
 mkdir -p ~/Wallpapers
