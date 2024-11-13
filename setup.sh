@@ -3,7 +3,7 @@ set -e
 
 sudo systemctl enable --now bluetooth
 
-sudo pacman -S --noconfirm --needed base-devel pipewire libgtop bluez bluez-utils btop networkmanager dart-sass wl-clipboard brightnessctl swww python gnome-bluetooth-3.0 pacman-contrib gvfs tlp hyprland swww fish starship unzip git curl wget bash-completion fuzzel rustup neovim kitty fzf polkit chromium nerd-fonts gtk3 gtk4 pipewire btop networkmanager python sddm zellij swww thefuck wl-clipboard zoxide nodejs yarn npm gnome-keyring flatpak udiskie qt5-wayland qt6-wayland &&
+sudo pacman -S --noconfirm --needed base-devel pipewire libgtop bluez bluez-utils btop networkmanager dart-sass wl-clipboard brightnessctl python gnome-bluetooth-3.0 pacman-contrib gvfs tlp hyprland swww fish starship unzip git curl wget bash-completion fuzzel rustup neovim kitty fzf polkit chromium nerd-fonts gtk3 gtk4 sddm zellij thefuck zoxide nodejs yarn npm gnome-keyring flatpak udiskie qt5-wayland qt6-wayland &&
 
 rustup default stable
 
@@ -36,7 +36,5 @@ bash-it enable plugin fzf zoxide alias-completion
 cd
 paru -S --needed "luarocks" "python" "yazi" "fd" "git-delta" "grcov" "rustup" "yarn" "python-pytest" "gcc" "binutils" "dotnet-runtime" "dotnet-sdk" "aspnet-runtime" "mono" "jdk-openjdk" "dart" "kotlin" "elixir" "npm" "nodejs" "typescript" "make" "go" "nasm" "r" "nuitka" "python" "ruby" "perl" "lua" "pyinstaller" "swift-bin" "gcc-fortran" "fortran-fpm-bin" "doxygen" "ldoc" "ruby-yard"; yarn global add "jest" "jsdoc" "typedoc"; cargo install "cargo-nextest"; go install "golang.org/x/tools/cmd/godoc@latest"
 # Strongly recommended: Fork the repo and clone YOUR fork.
-git clone git@github.com:Keremimo/NormalNvim.git ~/.config/nvim
-git clone https://github.com/Jas-SinghFSU/HyprPanel.git && \
-  ln -s $(pwd)/HyprPanel $HOME/.config/ags
+git clone git@github.com:Keremimo/kickstart.nvim.git ~/.config/nvim
 chsh -s /usr/bin/fish
