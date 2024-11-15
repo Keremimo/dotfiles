@@ -1,13 +1,13 @@
-font-size = 14
-font-style = bold
 font-family = "DankMono Nerd Font"
+font-size = 15
+font-style = bold
 
 window-inherit-font-size = false
 window-decoration = false
 font-thicken = false
 keybind = ctrl+shift+comma=reload_config
 
-theme = catppuccin-mocha
+theme = Ayu Mirage
 mouse-hide-while-typing = true
 background-opacity = 0.80
 
