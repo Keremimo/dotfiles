@@ -9,7 +9,7 @@ ssh-keygen -t ed25519 -f ~/.ssh/id_ed25519 -N ""
 cat ~/.ssh/id_ed25519.pub | wl-copy
 read -rp "Press enter to continue after inputting your ssh key into github."
 
-sudo pacman -S --noconfirm --needed base-devel stow pipewire dunst libgtop bluez bluez-utils btop networkmanager brightnessctl python gnome-bluetooth-3.0 pacman-contrib gvfs tlp hyprland pavucontrol nm-connection-editor swww fish starship unzip git curl wget bash-completion fuzzel rustup go neovim kitty fzf polkit chromium nerd-fonts gtk3 gtk4 sddm zellij thefuck zoxide nodejs yarn npm gnome-keyring flatpak udiskie qt5-wayland qt6-wayland &&
+sudo pacman -S --noconfirm --needed base-devel stow lua fd yazi pipewire dunst libgtop bluez bluez-utils btop networkmanager brightnessctl python gnome-bluetooth-3.0 pacman-contrib gvfs tlp hyprland pavucontrol nm-connection-editor swww fish starship unzip git curl wget bash-completion fuzzel rustup go neovim kitty fzf polkit chromium nerd-fonts gtk3 gtk4 sddm zellij thefuck zoxide nodejs yarn npm gnome-keyring flatpak udiskie qt5-wayland qt6-wayland &&
 
 rustup default stable
 
@@ -28,7 +28,7 @@ git clone git@github.com:Keremimo/dotfiles.git
 cd ~/dotfiles
 stow . --adopt
 cd
-paru -S --needed "ghostty-git" "yazi" "fd" "typescript" "lua"
+paru -S --needed "ghostty-git" 
 git clone git@github.com:Keremimo/kickstart.nvim.git ~/.config/nvim
 curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
 fish
