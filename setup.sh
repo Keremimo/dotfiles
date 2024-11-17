@@ -28,8 +28,8 @@ git clone https://github.com/Keremimo/dotfiles.git
 cd ~/dotfiles
 stow . --adopt
 cd
-paru -S --needed "ghostty-git" 
-git clone git@github.com:Keremimo/kickstart.nvim.git ~/.config/nvim
+#paru -S --needed "ghostty-git" 
+#git clone git@github.com:Keremimo/kickstart.nvim.git ~/.config/nvim
 curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
 fish
 fisher install nickeb96/puffer-fish
