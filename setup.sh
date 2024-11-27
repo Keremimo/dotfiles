@@ -13,8 +13,8 @@ sudo pacman -S --noconfirm --needed base-devel stow lua fd ripgrep yazi pipewire
 
 rustup default stable
 
-git config --global user.name "Keremimo"
-git config --global user.email "nyaa@live.com"
+git config --global user.name "Kerem Kilic"
+git config --global user.email ""
 git config --global init.defaultBranch main
 git config --global color.ui auto
 git config --global pull.rebase false
