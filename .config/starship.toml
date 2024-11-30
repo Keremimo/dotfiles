@@ -7,7 +7,7 @@ $directory\
 [](fg:#313244 bg:#394260)\
 $git_branch\
 $git_status\
-[](fg:#394260 bg:#1e1e2e)\
+[](fg:#394260 bg:#212736)\
 $nodejs\
 $rust\
 $golang\

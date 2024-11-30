@@ -26,7 +26,7 @@
 },
 "group/batteries": {
 "orientation": "horizontal",
-"modules": ["battery"],
+"modules": ["battery", "battery#bat1"],
 "children-class": "batteries-group",
 "name": "batterygroup"
 },
