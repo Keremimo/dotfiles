@@ -1,3 +1,4 @@
+rvm default
 if status is-interactive
     # Commands to run in interactive sessions can go here
 end
@@ -11,15 +12,6 @@ alias cd=z
 alias ls=eza
 
 thefuck --alias | source
-
-function fish_hybrid_key_bindings --description \
-"Vi-style bindings that inherit emacs-style bindings in all modes"
-    for mode in default insert visual
-        fish_default_key_bindings -M $mode
-    end
-    fish_vi_key_bindings --no-erase
-end
-set -g fish_key_bindings fish_hybrid_key_bindings
 
 function starship_transient_prompt_func
   starship module character
@@ -37,3 +29,5 @@ set fzf_fd_opts --hidden --max-depth 5
 # bun
 set --export BUN_INSTALL "$HOME/.bun"
 set --export PATH $BUN_INSTALL/bin $PATH
+/home/kerem/.local/bin/mise activate fish | source
+

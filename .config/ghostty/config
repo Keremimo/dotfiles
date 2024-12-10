@@ -1,13 +1,12 @@
 font-family = "Dank Mono"
-font-size = 15
-font-style = bold
+font-size = 12
 
 window-inherit-font-size = false
 window-decoration = false
 font-thicken = false
 keybind = ctrl+shift+comma=reload_config
 
-theme = Ayu Mirage
+theme = FrontEndDelight
 mouse-hide-while-typing = true
 background-opacity = 0.80
 
