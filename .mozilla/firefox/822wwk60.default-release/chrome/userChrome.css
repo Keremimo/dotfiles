@@ -31,13 +31,13 @@
 /* Page back and foward buttons */
 #back-button,
 #forward-button {
-	display: flex !important;
+	display: none !important;
 }
 
 /* Extensions button */
 #unified-extensions-button {
-	position: absolute !important;
-	opacity: 0 !important;
+	position: relative !important;
+	opacity: 100 !important;
 	size: 1px !important;
 }
 
