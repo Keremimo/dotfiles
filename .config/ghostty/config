@@ -1,5 +1,5 @@
 font-family = "Dank Mono"
-font-size = 12
+font-size = 14
 
 window-inherit-font-size = false
 window-decoration = false
@@ -8,7 +8,7 @@ keybind = ctrl+shift+comma=reload_config
 
 theme = FrontEndDelight
 mouse-hide-while-typing = true
-background-opacity = 0.80
+background-opacity = 0.90
 
 window-vsync = false
 
