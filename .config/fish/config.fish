@@ -1,4 +1,3 @@
-rvm default
 if status is-interactive
     # Commands to run in interactive sessions can go here
 end
@@ -31,3 +30,6 @@ set --export BUN_INSTALL "$HOME/.bun"
 set --export PATH $BUN_INSTALL/bin $PATH
 /home/kerem/.local/bin/mise activate fish | source
 
+
+# Added by `rbenv init` on Thu Dec 12 10:17:55 AM CET 2024
+status --is-interactive; and ~/.rbenv/bin/rbenv init - --no-rehash fish | source
