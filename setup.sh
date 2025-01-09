@@ -14,7 +14,7 @@ sudo pacman -S --noconfirm --needed base-devel stow ghostty lua fd ripgrep yazi 
 rustup default stable
 
 git config --global user.name "Kerem Kilic"
-git config --global user.email ""
+git config --global user.email "code@kerem.tech"
 git config --global init.defaultBranch main
 git config --global color.ui auto
 git config --global pull.rebase false
