@@ -24,7 +24,7 @@ cd paru
 makepkg -si --noconfirm
 cd ..
 rm -rf ./paru
-paru -S --noconfirm catppuccin-gtk-theme-mocha
+paru -S --noconfirm catppuccin-gtk-theme-mocha banana-cursor-bin visual-studio-code-bin
 git clone git@github.com:Keremimo/dotfiles.git
 cd ~/dotfiles
 stow . --adopt
@@ -42,3 +42,5 @@ export ACCENT="mauve"
 
 # Set the theme
 sudo flatpak override --env=GTK_THEME="catppuccin-${FLAVOR}-${ACCENT}-standard+default"
+curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix -o nix-install.sh
+sh ./nix-install.sh install
