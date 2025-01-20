@@ -1,9 +1,10 @@
 font-family = "Dank Mono"
 font-size = 14
+font-style = bold
 
 window-inherit-font-size = false
 window-decoration = false
-font-thicken = false
+font-thicken = true
 keybind = ctrl+shift+comma=reload_config
 
 theme = FrontEndDelight
