@@ -24,7 +24,7 @@ cd paru
 makepkg -si --noconfirm
 cd ..
 rm -rf ./paru
-paru -S --noconfirm catppuccin-gtk-theme-mocha banana-cursor-bin visual-studio-code-bin
+paru -S --noconfirm banana-cursor-bin visual-studio-code-bin
 git clone git@github.com:Keremimo/dotfiles.git
 cd ~/dotfiles
 stow . --adopt
