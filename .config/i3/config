@@ -5,12 +5,13 @@ exec autotiling
 exec nm-applet
 exec udiskie
 exec dunst
+exec xset r rate 200 35
 
 exec_always for id in $(xinput list | grep "pointer" | cut -d '=' -f 2 | cut -f 1); do xinput --set-prop $id 'libinput Accel Profile Enabled' -, 1; done
 
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
-exec feh --bg-scale ./Downloads/1349956.png
+exec feh --bg-scale ~/Wallpapers/wallhaven-6dygpl.jpg
 
 ### Variables for settings (This makes changing them WAY easyer!) ###
 set $mod                             Mod4
@@ -192,6 +193,13 @@ client.background       $wm_color_background
 ### Miscellaneous settings ###
 # Set the font used for titlebars (which are hidden here)
 font $wm_setting_font
+
+bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +5%
+bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
+
+bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
