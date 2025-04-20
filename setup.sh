@@ -29,7 +29,7 @@ git clone git@github.com:Keremimo/dotfiles.git
 cd ~/dotfiles
 stow . --adopt
 cd
-git clone git@github.com:Keremimo/nvim.git ~/.config/nvim
+git clone git@github.com:Keremimo/nvim-lazy.git ~/.config/nvim
 curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher | fish
 fisher install nickeb96/puffer-fish | fish
 fisher install PatrickF1/fzf.fish | fish
