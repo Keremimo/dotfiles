@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 set -e
 
 sudo systemctl enable --now bluetooth
@@ -10,8 +10,7 @@ cat ~/.ssh/id_ed25519.pub | wl-copy
 read -n 1 -p "Press 1 to continue after inputting your ssh key into github."
 
 sudo pacman -S --noconfirm --needed base-devel stow nix fisher ghostty lua fd ripgrep yazi eza pipewire dunst noto-fonts-emoji libgtop bluez bluez-utils btop networkmanager brightnessctl python gnome-bluetooth-3.0 pacman-contrib gvfs tlp hyprland hyprpaper pavucontrol nm-connection-editor swww fish starship unzip git curl wget bash-completion fuzzel rustup go waybar neovim kitty fzf polkit chromium nerd-fonts swaync gtk2 gtk3 gtk4 sddm thefuck zoxide nodejs yarn npm gnome-keyring flatpak udiskie qt5-wayland qt6-wayland niri &&
-
-rustup default stable
+  rustup default stable
 
 git config --global user.name "Kerem Kilic"
 git config --global user.email "code@kerem.tech"
